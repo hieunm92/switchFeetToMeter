@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi giữa Feet và Meter </title>
+</head>
+<body>
+<form>
+   <p>Gia tri: <input type="number" id="gt" onclick="meterToFeet()">
+    <select name="" id="gt2">
+        <option value="1">meter To feet</option>
+        <option value="2">feet To meter</option>
+    </select></p>
+
+    <span id="display"></span>
+
+</form>
+<script>
+    function meterToFeet() {
+        let x = document.getElementById('gt').value;
+        let y = document.getElementById('gt2').value;
+
+        if (y == 1)
+            total = x * 3.279
+        else
+            total = x / 3.279;
+
+        document.getElementById('display').innerHTML = total;
+    }
+
+
+</script>
+</body>
+</html>
